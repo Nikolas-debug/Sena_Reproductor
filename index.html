@@ -8,378 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <style>
-
-        #principal{
-            width: 1200px;
-            height: 850px;
-            border-radius: 5%;
-            background: linear-gradient(to bottom,#170A1F, #8924BE, #4D0071);
-    }
-        #principalizq{
-            width: 230px;
-            height: 800px;
-            float: left;
-            margin-top: 2%;
-            margin-left:2% ;
-        }
-
-        #principalder{
-            width: 900px;
-            height: 800px;
-            background-color: white;
-            float: right;
-            margin-right: 2%;
-            margin-top: 2%;
-            border-radius: 16px;
-        }
-        #principalizinf {
-            width: 210px;
-            height: 270px;
-            border-radius: 5%;
-            float: left;
-            margin-left: 10px;
-            margin-top: 10px;
-            background: linear-gradient(to bottom,#9826B9, #CF52EB,#CF52EB );
-        }
-        #principalizqsup{
-            width: 210px;
-            height: 500px;
-            border-radius: 5%;
-            float: left;
-            margin-left: 10px;
-            margin-top: 10px;
-            padding-left: 15px;
-        }
-
-        #central{
-            height: 770px;
-            width: 560px;
-            margin-left: 10px;
-            margin-top: 2%;
-            margin-bottom: 2%;
-            float: left;
-       }
-        #centralsup{
-            width: 540px;
-            height: 270px;
-            float: left;
-            border-radius: 18px;
-            background:linear-gradient(to bottom, #CF52EB, #B039CF, #9826B9, #CF52EB);
-            margin-left: 10px;
-            margin-top: 5px;
-            display: flex;
-            flex-direction: row;
-        }
-
-        #titulo{
-            width: 540px;
-            height: 40px;
-            border-radius: 5%;
-            float: left;
-            margin-left: 10px;
-        }
-        #imagen{
-            display: flex;
-            justify-content: center;
-            overflow: visible;
-            width: 300px; 
-            height: 310px; 
-            transform:translateY(-40px) translateX(10.5px);
-        }
-        #info_publicidad{
-            width: 50%;
-            height: 360px;
-            display: flex;
-            flex-direction: column;
-            color: white;
-        }
-
-        #centralmed{
-            width: 540px;
-            height: 395px;
-            float: left;
-            margin-left: 10px;
-            margin-top: 10px;
-            border-radius: 5%;
-        }
-        #titulo1{
-            width: 530px;
-            height: 40px;
-            border-radius: 5%;
-            margin-left: 5px;
-            float: left;
-            margin-top: 10px;
-            display: flex;
-            flex-direction: row;
-        }
-
-        #carrusel{
-            width: 530px;
-            height: 150px;
-            float: left;
-            margin-left: 8px;
-            margin-top: 10px;
-            display: inline-flex
-        }
-        .display_cancion{
-            width: 24%;
-            height: 90%;
-            margin-top: 2px;
-            border-radius: 12px;
-        }
-
-        #cancion1{
-            background-image: url(Imagenes_prueba/Display_canciones/download.jpg);
-            background-size: cover;
-        }
-
-        #cancion2{
-            background-image: url(Imagenes_prueba/Display_canciones/Human_Album.jpg);
-            background-size: cover;
-        }
-
-        #cancion3{
-            background-image: url(Imagenes_prueba/Display_canciones/NirvanaNevermindalbumcover.jpg);
-            background-size: cover;
-        }
-
-        #cancion4{
-            background-image: url(Imagenes_prueba/Display_canciones/Tool_-_Lateralus.jpg);
-            background-size: cover;
-        }
-
-        .infocancion{
-            width: 90%;
-            height: 30%;
-            margin: 90px auto 0px 7px;
-            background-color: #3C028242;
-            border-radius: 8px;
-            display: flex;
-            flex-direction: row;
-        }
-
-        #titulo2{
-            width: 530px;
-            height: 35px;
-            border-radius: 5%;
-            float: left;
-            margin-left: 5px;
-            margin-top: 10px;
-            display: flex;
-            flex-direction: row;
-        }
-        #trending{
-            width: 540px;
-            height: 120px;
-            margin-left: 10px;
-            margin-top: 10px;
-            display: flex;
-            flex-direction: column;
-    }
-
-        .cancion_trending{
-            width: 95%;
-            height: 35%;
-            margin:14px 0px 0px 0px;
-            display: inline-flex;
-        }
-
-        .infocancion_trending{
-            width: 10%; 
-            height: 36%; 
-            margin: 5px 0px 5px 0px; 
-            padding: 8px 10px 10px 10px;
-            min-width: 0;
-        }
-
-        .reproductor{
-            background-color: #3C02822B;
-            border-radius: 18px;
-            width: 70%;
-            height: 37.8px;
-            margin-top: 2px;
-            display: flex;
-            align-items: center;
-        }
-
-        #linea_progreso{
-            width: 75%;
-            height: 2px;
-            background-color: #ffffff;
-            margin-left: 20px;
-        }
-
-        #tiempo{
-            color: #9826B999;
-            margin-left: 5px;
-            font-size: 12.5px;
-        }
-
-        #boton_play{
-            width: 8%;
-            height: 75%;
-            border-radius: 50px;
-            background: linear-gradient(to bottom, #CF52EB, #CF52EB, #9826B9);
-            margin-left: 5px;
-            display: flex;
-            align-items: center;
-        }
-
-        #derecha{
-            width:310px;
-            height: 770px;
-            margin-top: 2%;
-            float: right;
-            margin-right: 10px;
-        }
-        #derechasup{
-            width: 280px;
-            height: 320px;
-            margin-top: 5px;
-            margin-left: 10px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        #noti_y_busqueda{
-            width: 240px;
-            height: 40px;
-            margin-top:10px;
-            margin-left: 52px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-
-        #titulo3{
-            width: 267px;
-            height: 40px;
-            margin-top:10px;
-            margin-left: 10px;
-            display: inline-flex;
-        }
-
-        .artista{
-            width: 240px;
-            height: 80px;
-            margin-top: 5px;
-            margin-left: 10px;
-            display: inline-flex;
-        }
-        #derechainf{
-            width: 300px;
-            height: 340px;
-            margin-top: 10px;
-            margin-left: 5px;
-            border-radius: 30px;
-            background: linear-gradient(to bottom, #CF52EB, #1B0040);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #cancion_info{
-            width: 90%;
-            height: 45%;
-            display: flex;
-            flex-direction: row;
-        }
-
-        .cal-sans-regular {
-            font-family: "Cal Sans", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        .coda-extrabold {
-            font-family: "Coda", system-ui;
-            font-weight: 800;
-            font-style: normal;
-        }
-
-        #contenedor_secciones{
-            width: 190px;
-            height: 200px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .sections{
-            height:4%;
-            width: 95%;
-            margin-bottom: 4px;
-            border-radius: 5px;
-            display: flex;
-            flex-direction: row;
-            padding: 2px;
-        }
-
-        .sections:hover{
-            border: white solid 1px;
-        }
-
-        #contenedor_info{
-            width: 200px;
-            height: 30%;
-            display: flex;
-            flex-direction: row;
-            padding-left: 10px;
-            margin-top: 10px;
-        }
-
-        #info{
-            width: 65%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            padding: 10px 0px 10px 10px
-        }
-        #letras{
-            width: 200px;
-            height: 50%;
-            border-radius: 5%;
-            float: left;
-            margin-left: 5px;
-            margin-top: 2px;
-            overflow-y: auto;
-            scrollbar-width: none;
-        }
-
-        #compartir{
-            width: 200px;
-            height: 10%;
-            border-radius: 5%;
-            margin-left: 5px;
-            margin-top: 2px;
-            display: flex;
-            flex-direction: row;
-        }
-
-        #progreso{
-            width: 95%;
-            height: 22%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-
-        #opciones{
-            width: 96%;
-            height: 16%;
-            display: flex;
-            flex-direction: row;
-            margin-top: 5px;
-        }
-
-        .imagenes_carrusel{
-            width: 76%;
-            height: 76%;
-            margin-left: 65px;
-        }
-
-    </style>
 </head>
 <body>
     <div id="principal">
@@ -477,7 +107,7 @@
       <img src="Imagenes_prueba/22kendrick-album-articleLarge.webp" class="imagenes_carrusel" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5 class="cal-sans-regular">Kendrick Lamar</h5>
-        <p class="cal-sans-regular">TV OFF</p>
+        <p class="cal-sans-regular" style="color: black;">TV OFF</p>
       </div>
     </div>
   </div>
@@ -505,7 +135,7 @@
                             <h6 class="cal-sans-regular" style=" margin:0px; font-size: 6px; color: #FFFFFF78; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">My Chemical Romance</h6>
                             </div>
                             </div>
-                            <img src="Imagenes_prueba/Iconos_sections/play_circle_38dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.png" style="height: 34px; width: 34px; margin-top: 2px; cursor: pointer;" data-src="/Users/aprendizm105/Desktop/Copia de Framework/Canciones/Helena.mp3">
+                            <img src="Imagenes_prueba/Iconos_sections/play_circle_38dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.png" style="height: 34px; width: 34px; margin-top: 2px; cursor: pointer;" data-src="C:\Users\NRMac\Desktop\Copia de Framework\Canciones\Helena.mp3">
                         </div></div>
                         <div class="display_cancion" style="margin-right: 5px;" id="cancion2"><div class="infocancion">
                             <div style="width: 55%; height: 40%; margin: 5px 0px 5px 5px; padding: 5px 10px 10px 10px; min-width: 0;">
@@ -515,7 +145,7 @@
                             <h6 class="cal-sans-regular" style=" margin:0px; font-size: 6px; color: #FFFFFF78;">Death</h6>
                             </div>
                             </div>
-                            <img src="Imagenes_prueba/Iconos_sections/play_circle_38dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.png" style="height: 34px; width: 34px; margin-top: 2px; cursor: pointer;" data-src="/Users/aprendizm105/Desktop/Copia de Framework/Canciones/Lack of Comprehension.mp3">
+                            <img src="Imagenes_prueba/Iconos_sections/play_circle_38dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.png" style="height: 34px; width: 34px; margin-top: 2px; cursor: pointer;" data-src="C:\Users\NRMac\Desktop\Copia de Framework\Canciones\Lack of Comprehension.mp3">
                         </div></div>
                         <div class="display_cancion" style="margin-right: 5px;" id="cancion3"><div class="infocancion">
                             <div style="width: 55%; height: 40%; margin: 5px 0px 5px 5px; padding: 5px 10px 10px 10px; min-width: 0;">
@@ -525,7 +155,7 @@
                             <h6 class="cal-sans-regular" style=" margin:0px; font-size: 6px; color: #FFFFFF78;">Nirvana</h6>
                             </div>
                             </div>
-                            <img src="Imagenes_prueba/Iconos_sections/play_circle_38dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.png" style="height: 34px; width: 34px; margin-top: 2px; cursor: pointer;" data-src="/Users/aprendizm105/Desktop/Copia de Framework/Canciones/Nirvana - On a Plain (Nevermind full album playlist).mp3">
+                            <img src="Imagenes_prueba/Iconos_sections/play_circle_38dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.png" style="height: 34px; width: 34px; margin-top: 2px; cursor: pointer;" data-src="C:\Users\NRMac\Desktop\Copia de Framework\Canciones\Nirvana - On a Plain (Nevermind full album playlist).mp3">
                         </div></div>
                         <div class="display_cancion" id="cancion4"><div class="infocancion">
                             <div style="width: 55%; height: 40%; margin: 5px 0px 5px 5px; padding: 5px 10px 10px 10px; min-width: 0;">
@@ -535,7 +165,7 @@
                             <h6 class="cal-sans-regular" style="margin:0px; font-size: 6px; color: #FFFFFF78;">TOOL</h6>
                             </div>
                             </div>
-                            <img src="Imagenes_prueba/Iconos_sections/play_circle_38dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.png" style="height: 34px; width: 34px; margin-top: 2px; cursor: pointer;" data-src="/Users/aprendizm105/Desktop/Copia de Framework/Canciones/TOOL - Lateralus (Audio).mp3">
+                            <img src="Imagenes_prueba/Iconos_sections/play_circle_38dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.png" style="height: 34px; width: 34px; margin-top: 2px; cursor: pointer;" data-src="C:\Users\NRMac\Desktop\Copia de Framework\Canciones\TOOL - Lateralus (Audio).mp3">
                         </div></div>
                     </div>
                     <div id="titulo2">
