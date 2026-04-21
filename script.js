@@ -1,11 +1,7 @@
 const audioplayer= document.getElementById("audioplayer");
 const audiosource= document.getElementById("audiosource");
 const playlist= document.getElementById("carrusel");
-const links= playlist.getElementsByTagNameNS("*", "img");
-const albumcover= document.getElementById("albumcover");
-const songtitle= document.getElementById("songtitle");
-const nomcancion= playlist.getElementsByTagNameNS("*", "h4");
-const albumphoto= playlist.getElementsByTagNameNS("div", "img");
+const links= playlist.getElementsByClassName("display_cancion");
 
 for(let link of links){
     link.addEventListener("click", function(e){
